@@ -22,8 +22,21 @@
     	}
     </style>
 </head>
-<body>
-    <h1>Hola mundo</h1>
+<body onload="saludar();">
+    <h1 id="titulo">Hola mundo</h1>
     <p>Venid. Venid a por mi. Pero con la cara destapada hdp.</p>
+
+    <button onclick="cambiarColor">Cambiar color</button>
+
+    <script>
+    	function saludar(){
+    		alert('Bienvenido');
+    	}
+
+    	function cambiarColor(){
+    		document.getElementById("titulo").style.color = "darkgreen";
+    	}
+
+    </script>
 </body>
 </html>
