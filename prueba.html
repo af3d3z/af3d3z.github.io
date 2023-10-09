@@ -29,12 +29,19 @@
     <button onclick="cambiarColor();">Cambiar</button>
 
     <script>
+    	contador = 0;
+
     	function saludar(){
     		alert('Bienvenido');
     	}
 
     	function cambiarColor(){
-    		document.getElementById("titulo").style.color = "darkgreen";
+    		if(contador % 2 == 0){
+    			document.getElementById("titulo").style.color = "darkgreen";
+    		}else {
+    			document.getElementById("titulo").style.color = "red";
+    		}
+    		contador++;
     		
     	}
 
