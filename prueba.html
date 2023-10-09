@@ -8,9 +8,9 @@
     <title>Hola Mundo</title>
     <style>
     	body {
-    		background: url(https://www.viralistas.com/wp-content/uploads/2019/04/britney-spears-sale-sanatorio8.jpg);
-    		background-repeat: no-repeat;
-    		background-color: black;
+    		/*background: url(https://www.viralistas.com/wp-content/uploads/2019/04/britney-spears-sale-sanatorio8.jpg);
+    		background-repeat: no-repeat;*/
+    		background-color: #f6d7b9;
     	}
 
     	h1 {
@@ -38,8 +38,10 @@
     	function cambiarColor(){
     		if(contador % 2 == 0){
     			document.getElementById("titulo").style.color = "darkgreen";
+    			document.body.style.background = "#f4f4f4";
     		}else {
     			document.getElementById("titulo").style.color = "red";
+    			document.body.style.background = "#a8a3b7";
     		}
     		contador++;
     		

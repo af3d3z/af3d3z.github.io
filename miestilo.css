@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+
+body {
+	background-image: url(ts.jpg);
+	background-repeat: repeat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'UnifrakturMaguntia', cursive;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+	background-color: #f1f1f1;
+	text-align: left
+}
