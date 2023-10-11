@@ -1,15 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
 
-body {
-	background-image: url(ts.jpg);
-	background-repeat: repeat;
+
+h1, h2, h3, h4, h5, h6, li{
+	font-family: 'Pixelify Sans';
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'UnifrakturMaguntia', cursive;
+
+div {
+	text-align: left;
+	background: #f1f1f1;
+	padding: 2px;
+	border-radius: 25px;
+	margin: 10px;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul {
-	background-color: #f1f1f1;
-	text-align: left
+div > * {
+	margin-left: 20px; 
 }
