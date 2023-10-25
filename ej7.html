@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 6</title>
+</head>
+<body>
+	<form action="https://lm.ciclo.iesnervion.es/" name="formulario1" method="POST">
+		<fieldset>
+			<legend>Envia una receta</legend>
+			<label for="nombre">Nombre:</label>
+			<input type="text" name="nombre" required><br>
+			<label for="correo">Correo:</label>
+			<input type="mail" name="correo" required><br>
+			<label>Momento para comer:</label>
+			<input name="momento[]" type="checkbox" value="desayuno">Desayuno
+			<input name="momento[]" type="checkbox" value="almuerzo">Almuerzo
+			<input name="momento[]" type="checkbox" value="merienda">Merienda
+			<input name="momento[]" type="checkbox" value="cena">Cena
+			<input name="momento[]" type="checkbox" value="postre">Postre
+			<input name="momento[]" type="checkbox" value="resaca">Resaca
+			<br>
+			<label for="ingredientes">Ingredientes:</label>
+			<select multiple name="ingredientes[]" required>
+				<optgroup label="Carne"/>
+				<option>Pollo</option>
+				<option>Cerdo</option>
+				<option>Ternera</option>
+				<optgroup label="Pescado"/>
+				<option>Merluza</option>
+				<option>Rodaballo</option>
+				<option>Calamar</option>
+				<optgroup label="Verdura"/>
+				<option>Lechuga</option>
+				<option>Tomate</option>
+				<option>Patata</option>
+			</select><br><br>
+			<label>Tiempo de preparación aproximado (en minutos):</label><br>
+			<input type="radio" name="minutos" value="15">15 mins<br>
+			<input type="radio" name="minutos" value="30">30 mins<br>
+			<input type="radio" name="minutos" value="45">45 mins<br>
+			<label>Tiempo de preparación aproximado (en horas):</label><br>
+			<input type="radio" name="horas" value="0">0 horas<br>
+			<input type="radio" name="horas" value="1">1 hora<br>
+			<input type="radio" name="horas" value="2">2 horas<br>
+
+			<label>Añade una foto:</label><br>
+			<input type="file" accept="image/*" name="imagen"><br><br>
+
+			<button type="submit">Enviar</button>
+		</fieldset>
+	</form>
+</body>
+</html>
