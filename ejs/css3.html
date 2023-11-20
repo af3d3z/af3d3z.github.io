@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio con tablas</title>
+	<style type="text/css">
+		.tabla {
+			border: 1px solid grey;
+			width: 50%;
+			margin: auto;
+			padding: auto;
+		}
+
+		td, .celda {
+			border: 1px solid black;
+			padding: 10px;
+		}
+
+		.contenedor-tabla{
+			margin: auto;
+			padding: 2px;
+			border: 1px solid grey;
+			width: 50%;
+			display: grid;
+			grid-template-columns: auto auto auto;
+			grid-gap: 2px 2px;
+			overflow: hidden;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<table id="t1" border="1" width="50%" align="center" cellpadding="10px">
+    <tr>
+        <td>Tutoriales En Linea 1</td>
+        <td>Tutoriales En Linea 2</td>
+        <td>Tutoriales En Linea 3</td>
+    </tr>
+    <tr>
+        <td>Tutoriales En Linea 1</td>
+        <td>Tutoriales En Linea 2</td>
+        <td>Tutoriales En Linea 3</td>
+    </tr>
+</table>
+
+	<br><br>
+
+	<table class="tabla">
+		<tr>
+			<td>Tutoriales en línea 1</td>
+			<td>Tutoriales en línea 2</td>
+			<td>Tutoriales en línea 3</td>
+		</tr>
+		<tr>
+			<td>Tutoriales en línea 1</td>
+			<td>Tutoriales en línea 2</td>
+			<td>Tutoriales en línea 3</td>
+		</tr>
+	</table>
+
+	<br><br>
+	
+	<div class="contenedor-tabla">
+		<div class="celda">Tutoriales en línea 1</div>
+		<div class="celda">Tutoriales en línea 2</div>
+		<div class="celda">Tutoriales en línea 3</div>
+		
+		<div class="celda">Tutoriales en línea 1</div>
+		<div class="celda">Tutoriales en línea 2</div>
+		<div class="celda">Tutoriales en línea 3</div>
+		</div>
+	</div>
+</body>
+</html>
