@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio 4 CSS</title>
+	<style>
+		.caja {
+			max-width: 500px;
+			border: 10px dashed #993300;
+			margin: 20px;
+			padding: 10px;
+			background-color: #2a3e01;
+		}
+
+		.caja {
+			color: white;
+		}
+
+		.columna {
+			display: flex;
+			border: 1px solid black;
+			width: 30%;
+			background-color: lightblue;
+			margin: 10px;
+			justify-content: space-around;
+			flex-flow: wrap;
+			margin: auto;
+			padding: 10px;
+			margin-bottom: 10px;
+		}
+
+		@media(min-width: 600px){
+			img{display: none;}
+		}
+
+		@media (max-width: 600px) {
+			body{
+				background-color: green;
+				font-size: 0.8em;
+			}
+
+			.caja{
+				margin: 10px;
+				padding: 5px;
+			}
+
+		}
+	</style>
+</head>
+<body>
+	<div class="caja">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque volutpat ac tincidunt vitae semper quis. Vel quam elementum pulvinar etiam non quam lacus suspendisse faucibus. Amet tellus cras adipiscing enim eu turpis egestas. Viverra nam libero justo laoreet. Integer feugiat scelerisque varius morbi enim nunc faucibus a. Posuere ac ut consequat semper viverra nam libero. Non tellus orci ac auctor augue mauris augue neque. Suspendisse in est ante in nibh mauris cursus. Ultricies integer quis auctor elit sed. Purus semper eget duis at tellus at urna condimentum. Quam lacus suspendisse faucibus interdum posuere. Diam maecenas ultricies mi eget mauris pharetra et ultrices neque. Ut porttitor leo a diam sollicitudin tempor id. Varius morbi enim nunc faucibus a pellentesque sit amet. Mauris nunc congue nisi vitae suscipit tellus mauris.</p>
+
+		<div class="columna">a</div>
+	</div>
+
+	<img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.insidethemagic.net%2Fwp-content%2Fuploads%2F2018%2F03%2FGRC_Tsr1Sheet_GrinchAndMax_RGB_1-379x600.jpg&f=1&nofb=1&ipt=54d3da5e821cd382d17f2428eb53b73c7b0fcef043865d6539727a1a5e981aee&ipo=images">
+</body>
+</html>
