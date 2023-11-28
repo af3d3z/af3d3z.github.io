@@ -1,0 +1,50 @@
+#contenedor {
+    align-self: center;
+    margin: 20px;
+
+    p {
+        padding: 20px 0px;
+    }
+}
+
+nav {
+    display: inline-flex;
+    position: fixed;
+    background-color: cornflowerblue;
+    width: 110%;
+    left: -5px;
+    top: -2px;
+}
+
+nav, ul, li {
+    display: inline-flex;
+    justify-content: flex-start;
+    margin-right: 20px;
+}
+
+nav, ul, li, a {
+    color: white;
+    text-decoration: none;
+}
+
+li > a:hover {
+    background-color: white;
+    color: cornflowerblue;
+}
+
+@keyframes col {
+    0% {color: red;}
+    50%{color: green;}
+    100%{color: blue;}
+}
+
+@media not (max-width: 600px) {
+    #contenedor {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+h2 {
+    animation: col 5s infinite;
+}
