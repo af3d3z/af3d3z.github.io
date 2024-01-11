@@ -9,7 +9,7 @@
             background-color: black;
             margin-top: -22px;
             margin-left: -8px;
-            width: 110%;
+            width: 101%;
             padding: 0px;
             height: 80px;
         }
@@ -49,6 +49,48 @@
             text-decoration: none;
             border-radius: 10px;
         }
+
+        img {
+            display: block;
+            margin: auto;
+            padding:auto;
+        }
+
+        .root {
+            float: left;
+            width: 65%;
+        }
+
+        .side {
+            position: sticky;
+            margin-top: 20px;
+            margin-right: 5px;
+            background-color: crimson;
+            float: right;
+            width: 30%;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .side>h2, .side>p {
+            color: white;
+        }
+
+        .boton-inverted {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: block;
+            margin: 0 auto;
+            width: 60%;
+            justify-content: center;
+            border: none;
+            background-color: white;
+            color: crimson;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -56,18 +98,37 @@
         <h1>Tarea 5.1: Feeds RSS</h1>
         <h3 class="nombre">Alonso Fernández Fernández</h3>
     </div>
-    <h2>Mis recomendaciones:</h2>
-    <ol>
-        <li><h3>Atareao con linux</h3></li>
-        <p>Atareao con linux es un podcast / newsletter que trata sobre las aventuras y desventuras de Lorenzo Carbonell con Linux y software libre en general.</p>
-        <a class="boton" href="https://atareao.es">Ir a la web</a>
-        <li><h3>Hackaday</h3></li>
-        <p>Contiene trucos y tips sobre la informática además de noticias. (Aviso: La gente aquí está loca)</p>
-        <a class="boton" href="https://hackaday.com/">Ir a la web</a>
-        <li><h3>Tierra de Hackers</h3></li>
-        <p>Contiene trucos y tips sobre la informática además de noticias. (Aviso: La gente aquí está loca)</p>
-        <a class="boton" href="https://hackaday.com/">Ir a la web</a>
-    </ol>
-    <h2>Feeds interesantes:</h2>
+    <div class="root">
+        <h2>Mis recomendaciones:</h2>
+        <ol>
+            <li><h3>Atareao con linux</h3></li>
+            <p>Atareao con linux es un podcast / newsletter que trata sobre las aventuras y desventuras de Lorenzo Carbonell con Linux y software libre en general.</p>
+            <a class="boton" href="https://atareao.es">Ir a la web</a>
+            <li><h3>Hackaday</h3></li>
+            <p>Contiene trucos y tips sobre la informática además de noticias. (Aviso: La gente aquí está loca)</p>
+            <a class="boton" href="https://hackaday.com/">Ir a la web</a>
+            <li><h3>Tierra de Hackers</h3></li>
+            <p>Es un noticiero de ciberseguridad en formato podcast en el que Martín Vigo y  Alexis Porros documentan los descubrimientos y noticias de la semana en el campo de la ciberseguridad.</p>
+            <a class="boton" href="https://www.tierradehackers.com/">Ir a la web</a>
+        </ol>
+        <img src="../img/feeds.png">
+        <h2>Feeds interesantes:</h2>
+        <p>Me he apuntado a los siguentes feeds usando Inoreader:</p>
+        <ol>
+            <li>Vogue</li>
+            <img src="../img/feed-vogue.png" width="800">
+            <li>The Vergue</li>
+            <img src="../img/feed-theverge.png" width="800">
+            <li>Android Developers Blog</li>
+            <img src="../img/feed-android.png" width="800">
+        </ol>
+    </div>
+    <div class="side">
+        <h2>¿Te gusta la informática?<br>¡Te encantaŕa mi blog!</h2>
+        <p>¡Hola! Soy un estudiante de informática a quien le fascina el mundo de la informática y sus ramas (concretamente ciberseguridad).<br> Tengo un blog donde escribo sobre proyectos personales y cosas que me llamen la atención sobre la informática.<br>Si te interesa, podrías pasarte por ahí :)</p>
+        <img src="https://media1.tenor.com/m/TSJ8PZ22LR8AAAAC/toothless-dragon.gif" />
+        <br>
+        <a class="boton-inverted" href="http://alebozek.rf.gd">Visitar</a>
+    </div>
 </body>
 </html>
