@@ -1,1 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+    <title>Alonso's RSS</title>
+    <link>http://alebozek.rf.gd/</link>
+    <description>My RSS</description>
+    <item>
+        <title>Reverse Shells</title>
+        <link>http://alebozek.rf.gd/posts/Reverse%20Shells.php</link>
+        <description>Te explico cómo crear un script flasheable en un arduino</description>
+    </item>
+    <item>
+        <title>Guía IPTABLES</title>
+        <link>http://alebozek.rf.gd/posts/Gu%C3%ADa%20IPTABLES.php</link>
+        <description>Te doy una pequeña guía para usar iptables</description>
+    </item>
+</channel>
+</rss>
