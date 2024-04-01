@@ -8,6 +8,15 @@
 </head>
 <body>
     <script>
+        function jsonify(object) {
+            return JSON.parse(object);
+        }
+
+        function stringify(object) {
+            return JSON.stringify(object);
+        }
+
+
         function consultaUsuario() {
             let userDiv = document.getElementById("user");
             userDiv.innerHTML = "";
@@ -20,9 +29,9 @@
             };
 
             
-            let recuperado = JSON.stringify(usuario);
+            let recuperado = stringify(usuario);
             
-            let usuarioJSON = JSON.parse(recuperado);
+            let usuarioJSON = jsonify(recuperado);
             
             userDiv.innerHTML += "<br>" + recuperado + "<br>";
             console.log("Recuperado: " + recuperado);
