@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -39,25 +40,30 @@
 
             console.log(usuarioJSON);
 
-            userDiv.innerHTML += 
-                "<table>" +
-                    "<tr>" +
-                        "<th>Nombre</th>"+
-                        "<th>Apellido</th>"+
-                        "<th>Edad</th>"+
-                        "<th>Ciudad</th>"+
-                    "</tr>"+
-                    "<tr>"+
-                        "<td>" + usuarioJSON.nombre + "</td>"+
-                        "<td>" + usuarioJSON.apellidos + "</td>"+
-                        "<td>" + usuarioJSON.edad + "</td>"+
-                        "<td>" + usuarioJSON.ciudad + "</td>"+
-                    "</tr>"+
-                "</table>";
+            $('#nombre').html(usuarioJSON.nombre);
+            $('#apellidos').html(usuarioJSON.apellidos);
+            $('#edad').html(usuarioJSON.edad);
+            $('#ciudad').html(usuarioJSON.ciudad);
         }
     </script>
     <h1>Ejercicio1: Consulta de usuarios</h1>
     <button onclick="consultaUsuario()">Pulsa y observa la consola</button>
-    <div id="user"></div>
+    <div id="user">
+    </div>
+    <br>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Ciudad</th>
+        </tr>
+        <tr>
+            <td id="nombre"></td>
+            <td id="apellidos"></td>
+            <td id="edad"></td>
+            <td id="ciudad"></td>
+        </tr>
+    </table>
 </body>
 </html>
