@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        function consultaUsuario() {
+            let userDiv = document.getElementById("user");
+            userDiv.innerHTML = "";
+            
+            let usuario = {
+                "nombre": "Alberto",
+                "apellidos": "Ramos",
+                "edad": 26,
+                "ciudad": "Granada"
+            };
+
+            
+            let recuperado = JSON.stringify(usuario);
+            
+            let usuarioJSON = JSON.parse(recuperado);
+            
+            userDiv.innerHTML += "<br>" + recuperado + "<br>";
+            console.log("Recuperado: " + recuperado);
+            userDiv.innerHTML += "<br>Recuperado: " + recuperado + "<br><br>";
+
+            console.log(usuarioJSON);
+
+            userDiv.innerHTML += 
+                "<table>" +
+                    "<tr>" +
+                        "<th>Nombre</th>"+
+                        "<th>Apellido</th>"+
+                        "<th>Edad</th>"+
+                        "<th>Ciudad</th>"+
+                    "</tr>"+
+                    "<tr>"+
+                        "<td>" + usuarioJSON.nombre + "</td>"+
+                        "<td>" + usuarioJSON.apellidos + "</td>"+
+                        "<td>" + usuarioJSON.edad + "</td>"+
+                        "<td>" + usuarioJSON.ciudad + "</td>"+
+                    "</tr>"+
+                "</table>";
+        }
+    </script>
+    <h1>Ejercicio1: Consulta de usuarios</h1>
+    <button onclick="consultaUsuario()">Pulsa y observa la consola</button>
+    <div id="user"></div>
+</body>
+</html>

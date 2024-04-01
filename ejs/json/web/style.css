@@ -1,0 +1,22 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.root {
+    display: flex;
+    justify-content: center;
+}
+.user {
+    margin: 200px;
+    justify-content: center;
+}
+
+#weather {
+    margin: -180px;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin-left: 2%;
+}

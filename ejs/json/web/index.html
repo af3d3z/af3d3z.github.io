@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        function getCityInfo() {
+            event.preventDefault();
+            let xhr = new XMLHttpRequest();
+            let weatherDiv = document.getElementById('weather');
+            weatherDiv.innerHTML = "";
+            let userInput = document.getElementById('city').value;
+            
+            xhr.open("GET", "https://api.openweathermap.org/data/2.5/forecast?q=" + userInput + "&appid=4f7c4ff2c355d87ca1296ed0610ae1c8&units=metric");
+
+            xhr.onload = function () {
+                if(xhr.status = 200) {
+                    let cityData = JSON.parse(xhr.responseText);
+                    weatherDiv.innerHTML += '<img width="100px" style="flex: right;" src="http://openweathermap.org/img/w/' + cityData.list[0].weather[0].icon  + '.png " >' + "Weather: " + cityData.list[0].weather[0].main + "<br>Type: " + cityData.list[0].weather[0].description  + "<br>"; 
+                    weatherDiv.innerHTML += "Temp: " + cityData.list[1].main.temp + " ºC<br> Feels like: " + cityData.list[1].main.feels_like + "ºC <br>";
+                    if(cityData.city.population != 0) {
+                        weatherDiv.innerHTML += "Population: " + cityData.city.population + "<br>";
+                    }
+                    weatherDiv.innerHTML += "Latitud: " + cityData.city.coord.lat + "<br>";
+                    weatherDiv.innerHTML += "Longitude: " + cityData.city.coord.lon;
+                }
+            };
+
+            xhr.onerror = function () {
+                weatherDiv.innerHTML = "<h3>Could not get data</h3>";
+            }
+
+            xhr.send();
+        }
+
+    </script>
+    <h1>Weather App</h1>
+    <div class="root">
+        <div class="user">
+            <label>Enter the name of the city:</label><br>
+            <input type="text" id="city">
+            <input type="submit" value="Get info" onclick="getCityInfo()">
+        </div>
+    </div>
+    <div id="weather"></div>
+</body>
+</html>
