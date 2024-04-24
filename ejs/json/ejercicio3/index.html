@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+</head>
+
+<body>
+    <h1>Ejercicio3: Consulta de usuarios</h1>
+    <input type="text" id="nombre-form">
+    <input type="text" id="apellidos-form">
+    <input type="number" id="edad-form">
+    <input type="text" id="ciudad-form">
+    <br>
+    <fieldset>
+        <legend>Hobbies</legend>
+        <input type="checkbox" name="hobbies" value="Deporte">
+        <label>Deporte</label>
+        <input type="checkbox" name="hobbies" value="Lectura">
+        <label>Lectura</label>
+        <input type="checkbox" name="hobbies" value="Música">
+        <label>Música</label>
+        <input type="checkbox" name="hobbies" value="Juegos">
+        <label>Juegos</label>
+        <input type="checkbox" name="hobbies" value="Cine">
+        <label>Cine</label>
+        <input type="checkbox" name="hobbies" value="Teatro">
+        <label>Teatro</label>
+        <input type="checkbox" name="hobbies" value="Coleccionismo">
+        <label>Coleccionismo</label>
+        <input type="checkbox" name="hobbies" value="Bricolaje">
+        <label>Bricolaje</label>
+        <input type="checkbox" name="hobbies" value="Cosplay">
+        <label>Cosplay</label>
+    </fieldset>
+    <br>
+    <label>Suma: </label> <label id="suma"></label><br>
+    <label>Maximo: </label> <label id="max"></label><br>
+    <label>Minima: </label> <label id="min"></label><br>
+    <label>Media: </label> <label id="med"></label><br>
+    <button onClick="envio()">Calcular</button>
+    <button onclick="consultaUsuario()">Pulsa y observa la consola</button>
+    <div id="user">
+    </div>
+    <br>
+    <table id="tabla" border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Ciudad</th>
+            <th>Hobbies</th>
+        </tr>
+        <tbody id="userlist">
+
+        </tbody>
+    </table>
+</body>
+<script type="text/javascript" src="script.js"></script>
+
+</html>
