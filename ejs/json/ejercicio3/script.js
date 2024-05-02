@@ -10,12 +10,9 @@ let contadorEdades = 0;
 
 
 // checkbox listener
-$('input:checkbox').on('change', () => {
-    let nCheckbox = $('input:checkbox').filter(':checked').length;
-    if (nCheckbox >= 3) {
-        $('input:checkbox').map(() => {
-            $('input:checkbox').filter(':not("checked")').prop('disabled', true);
-        });
+$('input[type=checkbox]').on('change', () => {
+    if ($('input[type=checkbox]:checked').length > 3) {
+        $(this).prop('checked', false);
     }
 });
 
@@ -23,8 +20,7 @@ $('input:checkbox').on('change', () => {
 function envio() {
     console.log("User list: " + users);
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://lm.iesnervion.es/eco.php");
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.open("POST", "https://lm.iesnervion.es/eco.php");    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
     xhr.onload = () => {
         if(xhr.readyState == 4 && (xhr.status == 201 || xhr.status == 200)){

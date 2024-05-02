@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Productos</h1>
+    <p>Inserte los datos del producto:</p>
+    <h2 id="errores" style="color:red"></h2>
+    <br>
+    <div class="form" style="padding: 10px;">
+        <label>Descripción:</label>
+        <input type="text" id="desc" size="20%"><br>
+        <label>Id del proveedor:</label>
+        <input type="number" id="providerid"><br>
+        <label>Precio:</label>
+        <input type="number" id="price">
+        <button onclick="send()">Enviar</button>
+    </div>
+
+    <table border="1px solid black">
+        <thead>
+            <th>Descripción</th>
+            <th>Id Proveedor</th>
+            <th>Precio</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+</body>
+</html>
