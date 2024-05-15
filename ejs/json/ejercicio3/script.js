@@ -20,7 +20,7 @@ $('input[type=checkbox]').on('change', () => {
 function envio() {
     console.log("User list: " + users);
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://lm.iesnervion.es/eco.php");    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.open("POST", "https://lm.iesnervion.es/eco.php"); 
 
     xhr.onload = () => {
         if(xhr.readyState == 4 && (xhr.status == 201 || xhr.status == 200)){
